@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', cursive;
+}
+
+body {
+    background-color: #F7F3E3; /* Soft pastel */
+    color: #0D0C1D; /* Deep black */
+    text-align: center;
+    overflow-x: hidden;
+    background: url('assets/wave.svg');
+    background-size: cover;
+    background-position: center;
+    background-position-y: -80px;
+    
+}
+
+/* Header */
+header {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.logo {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/* Create Wish Button */
+.create-wish {
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 2px solid #0D0C1D; /* Deep black */
+    background: transparent;
+    color: #0D0C1D;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.create-wish:hover {
+    background: #0D0C1D;
+    color: #F7F3E3; /* Light pastel */
+}
+
+/* Main Section */
+main {
+    position: relative;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-family: 'Gilda Display', serif;
+    font-size: 32px;
+}
+
+.wishwave-title {
+    padding: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 128px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    color: #51A3A3; /* Cool teal */
+}
+
+
+/* Description */
+.description {
+    font-size: 16px;
+    width: 50%;
+    margin: auto;
+    max-width: 640px;
+    margin-bottom: 130px;
+}
+
+.highlight {
+    color: #DD7373; /* Warm red-pink */
+}
+
+/* Floating 3D Gift Boxes */
+.gift {
+    position: absolute;
+    width: 230px;
+    animation: float 4s infinite ease-in-out;
+}
+
+
+.gift1 {
+    bottom: 80%;
+    left: 10%;
+    animation-delay: 0.5s;
+}
+
+.gift2 {
+    top: 60%;
+    right: 10%;
+    animation-delay: 1s;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+}
+/* Floating Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
