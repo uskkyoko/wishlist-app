@@ -1,0 +1,259 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+/* Light Background */
+body {
+    background-color: #F7F3E3 !important; /* Soft pastel */
+    color: #0D0C1D;
+    text-align: center;
+    background: url('assets/wave.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -100px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    
+}
+
+/* Header */
+header {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.logo {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/* Create Wish Button */
+.create-wish {
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 2px solid #0D0C1D; /* Deep black */
+    background: transparent;
+    color: #0D0C1D;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.create-wish:hover {
+    background: #0D0C1D;
+    color: #F7F3E3; /* Light pastel */
+}
+
+/* Wishlist Container */
+.wishlist-container {
+    background: #F7F3E3;
+    color: #0D0C1D;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* --- Profile Header --- */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
+  
+  .profile-pic {
+    border: #0D0C1D 1px solid;
+    width: 100px;
+    height: 100px;
+    background:transparent;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .username {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .bio {
+    color: #506C64;
+    font-size: 15px;
+  }
+  
+
+/* --- Category Bar --- */
+.category-bar {
+    background: #51A3A3; /* Teal background */
+    color:#0D0C1D;
+    padding: 0px 0px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .categories {
+    background-color: #DD7373; /* Pink background */
+    color: #0D0C1D;
+    display: flex;
+    align-items: center;
+    border: #0D0C1D 1px solid;
+    height: 60px;
+    gap: 0px;
+  }
+  
+  .category {
+    font-size: 32px;
+    width: 270px;
+  }
+  
+  /* Plus Button inside Category Bar */
+  .add-category {
+    background:#F7F3E3;
+    border: 1px solid #0D0C1D;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    color:#0D0C1D;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-category:hover {
+    background: #0D0C1D;
+    color:#F7F3E3;
+  }
+  
+
+/* --- Wishlist Items Container --- */
+.wishlist-container {
+    padding: 0px 0px 10px 0px;
+  }
+  
+  .wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0px;
+  }
+  
+  /* Wishlist Item */
+  .wishlist-item {
+    background: #F7F3E3;
+    border: 1px solid #0D0C1D;
+    text-align: center;
+    padding: 15px;
+    max-width: 360px;
+    max-height: 400px;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: 200px;
+    background: #dcdcdc;
+    margin-bottom: 10px;
+  }
+  
+  /* Item Details */
+  .item-details h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .item-details p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* Item Buttons */
+  .item-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .price-btn {
+    font-family: 'Gilda Display', serif;
+    background: #DD7373;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #0D0C1D;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .price-btn:hover {
+    background: #0D0C1D;
+  }
+  
+  .link-btn {
+    font-family: 'Gilda Display', serif;
+    background: #51A3A3;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #0D0C1D;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .link-btn:hover {
+    background: #0D0C1D;
+  }
+
+/* Floating Gifts */
+.gift {
+    position: absolute;
+    width: 160px;
+    animation: float 4s infinite ease-in-out;
+}
+
+
+.gift1 {
+    bottom: 70%;
+    left: 20%;
+    animation-delay: 0.5s;
+}
+
+.gift2 {
+    top: 20%;
+    right: 10%;
+    animation-delay: 1s;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

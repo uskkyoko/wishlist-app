@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WishWave - Wishlists</title>
+    <link rel="stylesheet" href="wishlist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Gilda+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="WishWave Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><img src="assets/Wishlists.svg" alt="Wishlist"></li>
+                <li><img src="assets/User.svg" alt="Profile"></li>
+            </ul>
+        </nav>
+        <button class="create-wish">TO YOUR WISHLISTS</button>
+    </header>
+    <main>
+
+     <!-- Profile Header -->
+     <section class="profile-header">
+        <div class="profile-pic"></div>
+        <h1 class="username">uskyoko</h1>
+        <p class="bio">No bio yet</p>
+      </section>
+
+        <!-- Wishlist Category Bar -->
+    <section class="category-bar">
+        <!-- Here new wishlist categories would be added dynamically.
+             "GENERAL" is the default category; new ones would appear to its left. -->
+        <div class="categories">
+          <button class="category">GENERAL</button>
+          <!-- Example additional category:
+          <button class="category">NEW CATEGORY</button>
+          -->
+        </div>
+        <button class="add-category">+</button>
+      </section>
+
+        <!-- Wishlist Items Grid -->
+    <section class="wishlist-container">
+      <div class="wishlist-grid">
+        <!-- Wishlist Item Example -->
+        <div class="wishlist-item">
+          <div class="item-image"></div>
+          <div class="item-details">
+            <h3>Label</h3>
+            <p>Description</p>
+            <div class="item-buttons">
+              <button class="price-btn">125$</button>
+              <button class="link-btn">LINK</button>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat wishlist items as needed -->
+      </div>
+    </section>
+
+    <img src="assets/present3.png" alt="Floating Gift" class="gift gift1">
+    <img src="assets/present4.png" alt="Floating Gift" class="gift gift2">
+    </main>
+
+</body>
+</html>
