@@ -113,12 +113,12 @@ nav img {
 .category-bar {
     background: #51A3A3; /* Teal background */
     color:#0D0C1D;
-    padding: 0px 0px;
     height: 60px;
     display: flex;
     align-items: center;
     flex-direction: row;
     width: 100%;
+    margin: 0;  /* removed margin */
   }
   
   .categories {
@@ -159,49 +159,79 @@ nav img {
 
 /* --- Wishlist Items Container --- */
 .wishlist-container {
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px;
+    margin-top: 0;  /* set margin-top to 0 */
   }
   
   .wishlist-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0px;
+    grid-template-columns: 1fr, 1fr, 1fr 1fr;
+    justify-content:flex-start;
+    max-width: 1440px; /* 4 columns * 360px = 1440px */
   }
   
   /* Wishlist Item */
   .wishlist-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    height: 360px;
     background: #F7F3E3;
     border: 1px solid #0D0C1D;
-    text-align: center;
-    padding: 15px;
-    max-width: 360px;
-    max-height: 400px;
+    padding: 0px 0px;
+    margin-top: 0;  /* set margin-top to 0 */
+    /* Optionally, you can add box-sizing: border-box; if needed */
   }
   
   .item-image {
-    width: 100%;
-    height: 200px;
-    background: #dcdcdc;
+    position: relative;
+    height: 70%;
+    border: #0D0C1D 1px solid;
+    width:100%;
+    background: transparent;
     margin-bottom: 10px;
+  }
+  .small-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #DD7373;
+    color: #0D0C1D;
+    font-family: 'Gilda Display', serif;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .small-button:hover {
+    background: #0D0C1D;
+    color: #F7F3E3;
   }
   
   /* Item Details */
   .item-details h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 5px;
   }
   
   .item-details p {
-    font-size: 14px;
-    color: #666;
+    font-size: 15px;
+    color: #506C64;
     margin-bottom: 15px;
   }
   
   /* Item Buttons */
   .item-buttons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .price-btn {
@@ -211,13 +241,8 @@ nav img {
     padding: 10px 15px;
     font-size: 16px;
     color: #0D0C1D;
-    cursor: pointer;
-    transition: 0.3s ease;
   }
   
-  .price-btn:hover {
-    background: #0D0C1D;
-  }
   
   .link-btn {
     font-family: 'Gilda Display', serif;
@@ -232,6 +257,7 @@ nav img {
   
   .link-btn:hover {
     background: #0D0C1D;
+    color: #F7F3E3;
   }
 
 /* Floating Gifts */
@@ -259,3 +285,4 @@ nav img {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
+

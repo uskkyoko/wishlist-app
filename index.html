@@ -12,7 +12,12 @@
 
     <header>
         <div class="logo">
-            <img src="assets/logo.svg" alt="logo">
+            <img src="assets/logo.svg" alt="logo" id="logo">
+            <script>
+                document.getElementById('logo').addEventListener('click', function() {
+                  window.location.href = 'index.html';
+                });
+              </script>
         </div>
         <nav>
             <ul>
@@ -20,7 +25,12 @@
                 <li><img src="assets/User.svg" alt="Profile"></li>
             </ul>
         </nav>
-        <button class="create-wish">TO YOUR WISHLISTS</button>
+        <button class="create-wish" id="goToWishlists">TO YOUR WISHLISTS</button>
+        <script>
+            document.getElementById('goToWishlists').addEventListener('click', function() {
+              window.location.href = 'wishlist.html';
+            });
+          </script>
     </header>
 
     <main>
