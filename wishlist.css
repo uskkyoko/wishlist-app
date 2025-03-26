@@ -122,18 +122,20 @@ nav img {
   }
   
   .categories {
-    background-color: #DD7373; /* Pink background */
-    color: #0D0C1D;
     display: flex;
     align-items: center;
-    border: #0D0C1D 1px solid;
     height: 60px;
     gap: 0px;
   }
   
   .category {
+    background-color: #DD7373; /* Pink background */
+    border: #0D0C1D 1px solid;
+    height: 60px;
+    color: #0D0C1D;
     font-size: 32px;
     width: 270px;
+    cursor: pointer;
   }
   
   /* Plus Button inside Category Bar */
@@ -151,7 +153,7 @@ nav img {
   
   .add-category:hover {
     background: #0D0C1D;
-    color:#F7F3E3;
+    color: #F7F3E3;
   }
   
 
